@@ -3,8 +3,6 @@ import MenuContext from "../contexts/MenuContext";
 import { createNote, getNote, updateNote } from "../api/Sheety";
 import { auth } from "../authentication/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { json } from "react-router-dom";
-import { async } from "@firebase/util";
 
 const Notes = ({ noteToOpen }) => {
   const { menuContext, setMenuContext } = useContext(MenuContext);
@@ -75,7 +73,7 @@ const Notes = ({ noteToOpen }) => {
       await updateNote(note.id, { sheet1: note });
       getNotes();
     };
-    if (note.deleted == "T") update()
+    if (note.deleted === "T") update()
   }, [note]);
 
   return (
