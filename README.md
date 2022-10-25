@@ -1,19 +1,16 @@
-# DTS REA4 Final Project
+# DTS REA4 38 Final Project
 
-Ketentuan lengkap bisa dilihat di [Final Project Guidelines](https://docs.google.com/document/d/122KyWNQ4xxU4aFwWbM4vIfH7LM4AH2CZEZa3YsEHjCk). 
 
-## Daftar pair
+# Demo
+Berikut link demo aplikasi : https://scintillating-marigold-2ae731.netlify.app/
+link googlesheet :https://docs.google.com/spreadsheets/d/1kBn2YUBjHFrM1tYzNpdcta4HfRoF8WHSpDFABDCC3H8/edit#gid=0
 
-Tugas dikerjakan secara berpasangan, untuk daftar kelompok bisa dilihat pada masing-masing Classroom atau Discord Class.
+![](https://github.com/rangdayy/DTS4A-38-final/blob/choaz/public/assets/DTS4A-38-final.gif)
 
-## Fork and Clone
-
-Mohon perwakilan dari pair bisa melakukan fork repo ini dan clone, untuk repositori yang di fork menggunakan penamaan:
-
-`dts4[a/b/c]-[nomor pair]-final`
-
-Contoh: `dts4a-01-final`
-
-## Branching, commit
-
-Branch dapat sesuai dengan kebutuhan dan kesepakatan bersama dalam pair, namun hasil akhirnya harus di merge ke branch `main` dan di push ke Github. Pastikan hasil akhir kode sudah ter-push!
+# Penjelasan Aplikasi
+Memanfaatkan API dari Sheety.co, Sebuah Google Sheet dapat dijadikan sebagai basis data. Aplikasi ini merupakan aplikasi kelola
+catatan memo dengan UI yang didesain menyerupai aplikasi window yang dapat dibuka atau ditutup. terdapat beberapa menu pada aplikasi ini
+1. Direktori, dapat menampilkan dan mencari setiap catatan user
+2. Note, kelola setiap catatan (CRUD)
+3. Recycle Bin, menampilkan setiap catatan yang telah dihapus
+4. login dan logout menggunakan firebase
