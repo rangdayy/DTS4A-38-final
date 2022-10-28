@@ -2,12 +2,21 @@ import React, { useContext } from "react";
 import MenuContext from "../contexts/MenuContext";
 import { logout } from "../authentication/firebase";
 import { useNavigate } from "react-router-dom";
-const Menu = () => {
+const Menu = ({ setNoteToOpen }) => {
   const { menuContext, setMenuContext } = useContext(MenuContext);
-  
+
   const navigate = useNavigate();
 
   const menuClickFn = (num) => {
+    setNoteToOpen({
+      title: "",
+      note: "",
+      createdAt: "",
+      updatedAt: "",
+      userId: "",
+      deleted: "",
+      id: "",
+    });
     menuContext === num ? setMenuContext(0) : setMenuContext(num);
   };
 
