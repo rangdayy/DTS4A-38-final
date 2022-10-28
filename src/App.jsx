@@ -38,8 +38,8 @@ function App() {
         <div className="flex items-center justify-center min-h-screen h-200 bg-no-repeat bg-cover bg-[url('../public/assets/bg.svg')] md:px-0 px-4 py-4 md:py-10">
           <Directory setMenuToOpen={setOpenNote}/>
           <Notes noteToOpen={openNote}/>
-          <DeletedNotes />
-          <Menu/>
+          <DeletedNotes/>
+          <Menu setNoteToOpen={setOpenNote}/>
         </div>
       </MenuContext.Provider>
     </>
